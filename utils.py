@@ -1,6 +1,5 @@
 # """Utility functions for parsing and analyzing scraped book data."""
 
-
 def parse_price(price_text):
     """Convert a price string like '£51.77' into a float.
 
