@@ -4,11 +4,10 @@ from scraper import scrape_all
 from save import save_to_csv
 from utils import search_books, cheapest_book, average_price
 
-
-def main():
+def main ():
     print("Scraping books.toscrape.com ...")
-    books = scrape_all(max_pages=2)  # remove max_pages to scrape the whole site
-    print(f"Scraped {len(books)} books.")
+    books= scrap_all(max_pages=2)
+    print(f"Scra[ed{len(books) books.}")
 
     save_to_csv(books, "data/books.csv")
     print("Saved to data/books.csv")
